@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sddsd_uhf"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.sddsd_uhf.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主程序 -->
+        <activity
+            android:name="com.example.sddsd_uhf.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <!-- 资产盘点 -->
+        <activity
+            android:name="com.example.sddsd_uhf.PropertyInventoryActivity"
+            android:label="@string/propertyScan"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 仓储盘点 -->
+        <activity
+            android:name="com.example.sddsd_uhf.PropertyOutActivity"
+            android:label="@string/title_activity_property_out"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.PropertyDiaoBoActivity"
+            android:label="@string/title_activity_property_diao_bo"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuBack"
+            android:label="@string/title_activity_cangchu_back"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuManagerActivity"
+            android:label="@string/title_activity_cang_chu_manager" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.ZiChanManagerActivity"
+            android:label="@string/title_activity_zi_chan_manager" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.PanDianActivity"
+            android:label="@string/title_activity_pan_dian"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.AssetGatherActivity"
+            android:label="@string/title_activity_asset_gather"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <service android:name="com.example.UHFService.UhfService" >
+        </service>
+
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuOutManager"
+            android:label="@string/title_activity_cang_chu_out_manager"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.PropertyReturnActivity"
+            android:label="@string/title_activity_property_return"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.AssetScrapStopInfo"
+            android:label="@string/title_activity_asset_scrap_stop_info"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.AssetIn"
+            android:label="@string/title_activity_select"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuIn"
+            android:label="@string/title_activity_cang_chu_in"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuDiaoBo"
+            android:label="@string/title_activity_cang_chu_diao_bo"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.CangChuQuery"
+            android:label="@string/title_activity_cangchu_query" >
+        </activity>
+        <activity
+            android:name="com.example.sddsd_uhf.ReadCard"
+            android:label="@string/title_activity_read_card" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

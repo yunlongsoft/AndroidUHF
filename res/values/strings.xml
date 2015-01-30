@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">智能仓储</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_name_text">用户名：</string>
+    <string name="login_password_text">密码：</string>
+    <string name="login_button_text">登录</string>
+    <string name="title_activity_main">主页</string>
+    <string name="title_activity_warehouse_inventory">仓储盘点</string>
+    <string name="title_activity_warehouse_out_scan">仓储出库</string>
+    <string name="title_activity_proporty_inventory">资产盘点</string>
+    <string name="propertyOutScanDesc">仓储出库</string>
+    <string name="storageScanInventoryDesc">仓储盘点</string>
+    <string name="propertyOutScan">资产使用</string>
+    <string name="propertyScan">资产盘点</string>
+    <string name="title_activity_property_out">资产领用</string>
+    <string name="title_activity_property_diao_bo">资产调拨</string>
+    <string name="title_activity_cangchu_back">仓储退库</string>
+    <string name="string_layout_cangChuManager">仓储管理</string>
+    <string name="string_layout_ziChanManager">资产管理</string>
+    <string name="string_layout_shuJuUpload">数据上传</string>
+    <string name="string_layout_shuJuDownload">数据下载</string>
+    <string name="string_layout_cleardata">清空数据</string>
+    <string name="string_layout_readwritetag">读写标签</string>
+    <string name="title_activity_cang_chu_manager">仓储管理</string>
+    <string name="title_activity_zi_chan_manager">资产管理</string>
+    <string name="title_activity_shu_ju_upload">ShuJuUploadActivity</string>
+    <string name="title_activity_shu_ju_download">ShuJuDownloadActivity</string>
+    <string name="icon_cangchu_tuiku">仓储退库</string>
+    <string name="icon_cangchu_diaobo">仓储调拨</string>
+    <string name="icon_cangchu_shangchuan">数据上传</string>
+    <string name="icon_cangchu_in">仓储入库</string>
+    <string name="title_activity_cangchu_query">商品查询</string>
+    <string name="icon_cangchu_query">商品查询</string>
+    <string name="icon_cangchu_chuku">仓储出库</string>
+    <string name="title_activity_pan_dian">仓储盘点</string>
+    <string name="title_activity_asset_gather">资产入库</string>
+    <string name="title_activity_asset_gether_main">AssetGetherMainActivity</string>
+    <string name="title_activity_set_asset_info">SetAssetInfoActivity</string>
+    <string name="inventory">开始扫描</string>
+    <string name="stopinventory">停止扫描</string>
+    <string name="icon_zichan_chuku">资产领用</string>
+    <string name="icon_zichan_tuiku">资产归还</string>
+    <string name="icon_zichan_diaobo">资产调拨</string>
+    <string name="icon_zichan_shangchuan">上传数据</string>
+    <string name="icon_zichan_xiazai">下载数据</string>
+    <string name="icon_zichan_infogether">资产入库</string>
+    <string name="userInfo">UserInfo</string>
+
+    <string-array name="states">
+        <item>在库</item>
+        <item>领用</item>
+        <item>报废</item>
+        <item>报停</item>
+    </string-array>
+    <string-array name="AsseetTypes">
+        <item>正常库</item>
+        <item>虚拟库</item>
+    </string-array>
+    <string-array name="AsseetUserTypes">
+        <item>职员</item>
+        <item>项目</item>
+    </string-array>
+    <string-array name="AsseetModel">
+         <item>报停</item>
+         <item>报废</item>
+    </string-array>
+    <string-array name="AsseetwarehouseType">
+        <item>公司之间</item>
+        <item>库房之间</item>
+        <item>项目之间</item>
+    </string-array>
+    <string-array name="Asseetdiaobotype">
+        <item>公司之间</item>
+    </string-array>
+
+    <string name="spinner_select_prompt">选择一种颜色</string>
+    <string name="string_setip_port">设置ip和端口号</string>
+    <string name="title_activity_cang_chu_out_manager">仓储出库</string>
+    <string name="title_activity_property_return">资产归还</string>
+    <string name="title_activity_asset_scrap_stop_info">资产报废报停</string>
+    <string name="title_activity_select">设备查询</string>
+    <string name="zichan_scrap_stop">报废报停</string>
+    <string name="title_activity_cang_chu_in">仓储入库</string>
+    <string name="title_activity_cang_chu_diao_bo">仓储调拨</string>
+    <string name="title_activity_cang_chu_query">CangChuQuery</string>
+    <string name="title_activity_read_card">ReadCard</string>
+
+</resources>

@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PropertyOutActivity" >
+      <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+   
+        <LinearLayout
+            android:id="@+id/LinearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用公司" />
+
+            <Spinner
+                android:id="@+id/usercompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+     <!-- 领用者信息 -->
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/LinearLayout1"
+        android:orientation="horizontal"
+         >
+        <LinearLayout
+            android:id="@+id/LinearLayout21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所属部门" />
+
+            <Spinner
+                android:id="@+id/departmentid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/LinearLayout22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领用者" />
+
+            <Spinner
+                android:id="@+id/recipients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 使用者信息 -->
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout2"
+        android:orientation="horizontal"
+        android:baselineAligned="false" >
+      <LinearLayout
+            android:id="@+id/LinearLayout32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用者类型" />
+
+            <Spinner
+                android:id="@+id/theuserstype"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LinearLayout31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="使用者" />
+
+            <Spinner
+                android:id="@+id/theusers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+     <LinearLayout
+        android:id="@+id/LinearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/LinearLayout3"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/scanbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="扫描" />
+
+        <EditText
+            android:id="@+id/barcodes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="标签号" />
+         <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_weight="1"
+            android:text="添加" />
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/LinearLayout_titleBianhao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout4" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="编号"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="标签号"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="出库个数"
+            android:textSize="18sp" />
+    </LinearLayout>
+        <ListView
+            android:id="@+id/data_list"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@+id/LinearLayout_titleBianhao"
+            android:divider="#0a0f0b"
+            android:dividerHeight="1dp" />
+        
+    <LinearLayout
+        android:id="@+id/LinearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/data_list"
+        android:orientation="horizontal"
+      >
+       <Button 
+           android:id="@+id/button_save"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="保存" />
+        <Button 
+           android:id="@+id/button_clear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1" 
+           android:text="清空"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

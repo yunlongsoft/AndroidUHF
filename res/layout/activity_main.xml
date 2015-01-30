@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <!-- 仓储管理 -->
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/cangChuManager"
+        android:layout_width="115dip"
+        android:layout_height="120dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginTop="60dip"
+        android:contentDescription="@string/string_layout_cangChuManager"
+        android:src="@drawable/cangchumanager1"
+        android:text="@string/string_layout_cangChuManager"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+    <!-- 资产管理 -->
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/storageScan"
+        android:layout_width="115dip"
+        android:layout_height="120dip"
+        android:layout_alignTop="@+id/cangChuManager"
+        android:layout_toRightOf="@+id/cangChuManager"
+        android:src="@drawable/zichanmanager"
+        android:text="@string/string_layout_ziChanManager"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <!-- 数据下载 -->
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/shuJuDownload"
+        android:layout_width="115dip"
+        android:layout_height="120dip"
+        android:layout_alignLeft="@+id/cangChuManager"
+        android:layout_below="@+id/cangChuManager"
+        android:src="@drawable/download3"
+        android:text="@string/string_layout_shuJuDownload"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+    <!-- 清除数据 -->
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/cleardata"
+        android:layout_width="115dip"
+        android:layout_height="120dip"
+        android:layout_alignLeft="@+id/storageScan"
+        android:layout_below="@+id/storageScan"
+        android:src="@drawable/cleardata"
+        android:text="@string/string_layout_cleardata"
+        android:textColor="#ffffff" >
+
+    </com.example.common.ImageButtonTemplate>
+    <!-- 读写数据 android:visibility="gone" -->
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/readwritetag"
+        android:layout_width="115dip"
+        android:layout_height="120dip"
+        android:layout_alignLeft="@+id/shuJuDownload"
+        android:layout_below="@+id/shuJuDownload"
+        android:src="@drawable/duxietag"
+        android:text="@string/string_layout_readwritetag"
+        android:textColor="#ffffff"
+         >
+    </com.example.common.ImageButtonTemplate>
+
+</RelativeLayout>

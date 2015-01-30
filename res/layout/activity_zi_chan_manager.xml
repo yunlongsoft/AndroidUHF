@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ZiChanManagerActivity" >
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_chuku"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_marginLeft="35dip"
+        android:layout_marginTop="0dip"
+        android:src="@drawable/chuku2"
+        android:text="@string/icon_zichan_chuku"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_tuiku"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignTop="@+id/zichan_chuku"
+        android:layout_toRightOf="@+id/zichan_chuku"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/return2"
+        android:text="@string/icon_zichan_tuiku"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_pandian"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/zichan_chuku"
+        android:layout_below="@+id/zichan_chuku"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/pandian2"
+        android:text="@string/propertyScan"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_diaobo"
+       android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/zichan_tuiku"
+        android:layout_below="@+id/zichan_tuiku"
+        android:background="#00000000"
+        android:src="@drawable/diaobo2"
+        android:text="@string/icon_zichan_diaobo"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_upload"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/zichan_pandian"
+        android:layout_below="@+id/zichan_pandian"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/upload2"
+        android:text="@string/icon_zichan_shangchuan"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_infogether"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignTop="@+id/zichan_upload"
+        android:layout_toRightOf="@+id/zichan_upload"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/zichanin2"
+        android:text="@string/icon_zichan_infogether"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+
+    <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_assetIn"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/zichan_upload"
+        android:layout_below="@+id/zichan_upload"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/chaxun"
+        android:text="@string/title_activity_select"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+  <com.example.common.ImageButtonTemplate
+        android:id="@+id/zichan_scrapstop"
+        android:layout_width="110dip"
+        android:layout_height="100dip"
+        android:layout_alignLeft="@+id/zichan_infogether"
+        android:layout_below="@+id/zichan_infogether"
+        android:contentDescription="@string/string_layout_shuJuUpload"
+        android:src="@drawable/baofeibaoting2"
+        android:text="@string/zichan_scrap_stop"
+        android:textColor="#ffffff" >
+    </com.example.common.ImageButtonTemplate>
+</RelativeLayout>
